@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 .hero-section{
-    background: url(/assets/images/background.png);
+    background: url(/assets/images/background2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,18 +18,21 @@
 body{
     background: #000;
     font-family: 'Urbanist', sans-serif;
-    cursor: none;
     color: rgb(231, 228, 255);
 }
 p{
     letter-spacing: 1px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
 }
 .gradient-text{
     background-image: -webkit-linear-gradient(
         45deg,
         #f614b8 10%,
         #f78ea8 30%,
-        #0000ff 50%
+        #734ff4 50%
       );
   background-clip: text;
   -webkit-background-clip: text;
@@ -76,6 +79,11 @@ header.header-scrolled{
     padding: 2rem 0;
     font-size: 4rem;
 }
+.work-card img{
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 16px;
+}
 
 //footer
 footer .container{
@@ -84,16 +92,22 @@ footer .container{
 }
 
 //cursor css
-body .cursor {
-    pointer-events: none;
-  }
-  body .cursor__ball {
-    position: fixed;
-    top: 0;
-    left: 0;
-    mix-blend-mode: difference;
-    z-index: 1000;
-  }
-  body .cursor__ball circle {
-    fill: #f7f8fa;
-  }
+// body .cursor {
+//     pointer-events: none;
+//   }
+//   body .cursor__ball {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     mix-blend-mode: difference;
+//     z-index: 1000;
+//   }
+//   body .cursor__ball circle {
+//     fill: #f7f8fa;
+//   }
+
+@media (max-width: 768px) {
+    .hero-section h1{
+        font-size: 3rem;
+    }
+}
