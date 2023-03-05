@@ -1,3 +1,11 @@
+:root {  
+    --purple: rgb(123, 31, 162);
+    --violet: rgb(103, 58, 183);
+    --pink: rgb(244, 143, 177);
+  }
+  
+  
+  
 // font link
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -27,18 +35,7 @@ a{
     text-decoration: none;
     color: inherit;
 }
-.gradient-text{
-    background-image: -webkit-linear-gradient(
-        45deg,
-        #f614b8 10%,
-        #f78ea8 30%,
-        #734ff4 50%
-      );
-  background-clip: text;
-  -webkit-background-clip: text;
-  text-fill-color: transparent;
-  -webkit-text-fill-color: transparent;
-}
+
 /* header css  */
 header{
     position: fixed;
@@ -48,15 +45,17 @@ header{
     border-radius: 16px;
     z-index: 100;
     border: 1px solid rgba(255,255,255,0);
+    margin-top: 1rem;
 }
 header.header-scrolled{
-    background: rgba(0,0,0,0.15);
+    background: rgba(0,0,0,0.4);
     backdrop-filter: blur(16px);
     margin-top: 4px;
     border: 1px solid rgba(255,255,255,0.2);
 }
 .navbar-dark .navbar-nav .nav-link{
     color: #fff;
+    font-weight: 700;
 }
 .navbar{
     padding: 1.5rem 0;
@@ -64,15 +63,45 @@ header.header-scrolled{
 .navbar-brand{
     font-weight: bold;
 }
+
 // hero section css 
 
 .hero-section h1{
-    font-size: 5rem;
-    font-weight: 700;
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+.hero-section p{
+    font-size: 18px;
 }
 .section-heading{
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid rgb(255 255 255 / 50%);
 }
+
+//text gradient animation
+@keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+    
+    to {
+      background-position: -200% center;
+    }
+  }
+.gradient-text {
+    animation: background-pan 6s linear infinite;
+    background: linear-gradient(
+      to right,
+      var(--purple),
+      var(--violet),
+      var(--pink),
+      var(--purple)
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+    font-weight: 700;
+  }
 
 //work section
 .section-heading{
@@ -83,6 +112,9 @@ header.header-scrolled{
     aspect-ratio: 16/9;
     object-fit: cover;
     border-radius: 16px;
+}
+.work-card h3{
+    line-height: 1.5;
 }
 
 //footer
@@ -110,4 +142,19 @@ footer .container{
     .hero-section h1{
         font-size: 3rem;
     }
+}
+
+
+
+//case study css
+.case-study-cover{
+    aspect-ratio: 16/9;
+    background: url(/assets/images/case-study-img-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.case-study-content{
+    margin: auto;
+    max-width: 1000px;
 }
