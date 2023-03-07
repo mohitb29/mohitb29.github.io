@@ -6,6 +6,29 @@
   --pink: rgb(244, 143, 177);
 }
 
+body {
+  background: #000;
+  font-family: "Golos Text", sans-serif;
+  color: rgb(231, 228, 255);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Urbanist", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #974af3;
+}
+
+a:hover img {
+  opacity: 0.6;
+}
+
 .hero-section {
   min-height: 100vh;
   color: #fff;
@@ -24,7 +47,7 @@
 }
 
 .social-wrapper img {
-  width: 48px;
+  width: 40px;
 }
 
 .social-wrapper {
@@ -38,23 +61,19 @@
   width: fit-content;
 }
 
-body {
-  background: #000;
-  font-family: "Golos Text", sans-serif;
-  color: rgb(231, 228, 255);
+.social-wrapper a {
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+  overflow: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Urbanist", sans-serif;
+.social-wrapper a:hover {
+  justify-content: flex-end;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-a:hover {
-  color: #974af3;
+.social-wrapper a:hover img {
+  opacity: 1;
 }
 
 /* header css  */
