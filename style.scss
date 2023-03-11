@@ -28,6 +28,10 @@ a:hover {
 a:hover img{
     opacity: 0.6;
 }
+.header-logo{
+    height: 14px;
+    margin-right: 4px;
+}
 .hero-section{
     min-height: 100vh;
     color: #fff;
@@ -97,7 +101,7 @@ header.header-scrolled{
     padding: 1.5rem 0;
 }
 .navbar-brand{
-    font-weight: bold;
+    font-weight: 500;
 }
 
 // hero section css 
