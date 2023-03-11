@@ -11,7 +11,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap');
 
 body{
-    background: #000;
+    background: #000012;
     font-family: 'Golos Text', sans-serif;
     color: rgb(231, 228, 255);
 }
@@ -36,6 +36,12 @@ a:hover img{
     .avatar-image{
         width: 120px;
     }
+}
+.dropdown-menu{
+    background-color: #000012;
+}
+.dropdown-item{
+    color:#fff
 }
 .home .hero-section{
     background: url(/assets/images/background2.jpg);
@@ -171,6 +177,9 @@ footer .container{
 @media (max-width: 768px) {
     .hero-section h1{
         font-size: 3rem;
+    }
+    header{
+        background: #000012;
     }
 }
 
