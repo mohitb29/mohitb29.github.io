@@ -117,6 +117,10 @@ header.header-scrolled {
   padding: 1.5rem 0;
 }
 
+.dropdown-divider {
+  border-top: 1px solid rgb(255, 255, 255);
+}
+
 .navbar-brand {
   font-weight: 500;
 }
@@ -171,6 +175,15 @@ header.header-scrolled {
 footer .container {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   color: rgba(255, 255, 255, 0.6);
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  overflow: hidden;
+  border-radius: 16px;
 }
 
 @media (max-width: 768px) {
