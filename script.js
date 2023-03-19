@@ -2,9 +2,6 @@
 let hdr_height = document.querySelector("header").offsetHeight;
 document.querySelector(".hero-section").style.paddingTop = hdr_height+"px";
 
-//AOS initialization
-AOS.init();
-
 // for header class change
 function setHeaderClass(){
     if(document.querySelector("html").scrollTop > 10){
