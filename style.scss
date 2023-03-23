@@ -22,6 +22,7 @@ h1,h2,h3,h4,h5,h6{
 .case-study{
     p,li{
         font-family: 'Martel', sans-serif;
+        color: #c1bed4;
     }
     
 }
@@ -41,7 +42,6 @@ a:hover img{
 }
 .hero-section{
     min-height: 100vh;
-    color: #fff;
     background-attachment: fixed;
     min-height: 100vh;
     .avatar-image{
@@ -207,11 +207,31 @@ footer .container{
 //case study css
 .case-study-cover{
     aspect-ratio: 21/9;
-    background: url(/assets/images/case-study-img-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     border-radius: 2rem;
+}
+.cover-1{
+    background: url(/assets/images/case-study-img-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cover-2{
+    background: url(/assets/images/case-study-img-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cover-3{
+    background: url(/assets/images/case-study-img-3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cover-4{
+    background: url(/assets/images/case-study-img-4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .case-study-content{
     margin: auto;
