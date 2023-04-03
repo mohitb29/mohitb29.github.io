@@ -167,7 +167,37 @@ header.header-scrolled{
 .work-card h3{
     line-height: 1.5;
 }
-
+//user personas
+.persona-wrapper .row{
+    align-items: stretch;
+}
+p.persona-name{
+    font-size: 24px;
+}
+.persona-header{
+    gap:16px;
+}
+.persona-image{
+    height: 100px;
+}
+.persona-card{
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    gap: 24px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 16px;
+    height: 100%;
+}
+.persona-header{
+    align-items: center;
+}
+.persona-name, .persona-age{
+    margin:0
+}
+.persona-details{
+    gap:8px;
+}
 //footer
 footer .container{
     border-top: 1px solid rgba(255,255,255,0.2);
